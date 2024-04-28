@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuFragment">
+    tools:context=".presentation.ui.menu.MenuFragment">
 
     <ImageView
         android:id="@+id/img_weather"
@@ -51,7 +51,8 @@
         android:gravity="center"
         android:text="@string/_0"
         android:textSize="64sp"
-        app:layout_constraintTop_toBottomOf="@id/tv_day" />
+        app:layout_constraintTop_toBottomOf="@id/tv_day"
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/tv_loc"

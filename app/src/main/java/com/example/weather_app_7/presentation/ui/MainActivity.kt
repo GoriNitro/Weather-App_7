@@ -1,11 +1,10 @@
-package com.example.weather_app_7
+package com.example.weather_app_7.presentation.ui
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.navigation.fragment.NavHostFragment
+import com.example.weather_app_7.R
 import com.example.weather_app_7.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
