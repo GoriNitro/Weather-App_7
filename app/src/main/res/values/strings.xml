@@ -7,4 +7,9 @@
     <string name="location">LOCATION</string>
     <string name="time">time</string>
     <string name="_00_00">00:00</string>
+    <string name="enter_location">Enter location</string>
+    <string name="tab_to_get_results">Tab to get results</string>
+    <string name="search">Найти город</string>
+    <string name="enter_text">Введите название города</string>
+    <string name="sea">искать</string>
 </resources>

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".presentation.ui.menu.MenuFragment">
 
+
     <ImageView
         android:id="@+id/img_weather"
         android:layout_width="match_parent"
@@ -13,26 +14,40 @@
         android:scaleType="centerCrop"
         android:src="@mipmap/ic_launcher" />
 
+    <ImageView
+        android:id="@+id/btn_search"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="32dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tv_day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="64dp"
         android:text="@string/day"
+        android:textColor="@color/black"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_temp"
+        android:id="@+id/tv_temp_min"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
         android:layout_marginTop="28sp"
         android:gravity="center"
         android:text="@string/_0"
-        android:textSize="64sp"
+        android:textColor="@color/black"
+        android:textSize="36sp"
         app:layout_constraintTop_toBottomOf="@id/tv_day" />
+
 
     <ImageView
         android:id="@+id/for_s"
@@ -45,60 +60,34 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28sp"
-        android:gravity="center"
-        android:text="@string/_0"
-        android:textSize="64sp"
-        app:layout_constraintTop_toBottomOf="@id/tv_day"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <TextView
         android:id="@+id/tv_loc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:gravity="center"
         android:text="@string/location"
+        android:textColor="@color/black"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/for_s" />
 
+    <ProgressBar
+        android:id="@+id/progress_bar_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/rv_prognoz"
+        app:layout_constraintEnd_toEndOf="@id/rv_prognoz"
+        app:layout_constraintStart_toStartOf="@id/rv_prognoz"
+        app:layout_constraintTop_toTopOf="@id/rv_prognoz" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_prognoz"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/tv_location" />
+        android:layout_marginBottom="48dp"
+        android:background="@color/blur"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
-    <ImageView
-        android:id="@+id/btn_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:src="@drawable/baseline_arrow_back_24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/btn_next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:src="@drawable/baseline_arrow_forward_24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/tv_location"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/location"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

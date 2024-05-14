@@ -5,7 +5,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
-class ApiClient {
+class ApiClient(private val baseUrl: String) {
     private lateinit var retrofit: Retrofit
 
     private val client =
@@ -17,7 +17,7 @@ class ApiClient {
 
     fun getClient(): Retrofit {
         retrofit = Retrofit.Builder()
-            .baseUrl("https://api.openweathermap.org")
+            .baseUrl(baseUrl)
             .client(client)
             .addConverterFactory(GsonConverterFactory.create())
             .build()

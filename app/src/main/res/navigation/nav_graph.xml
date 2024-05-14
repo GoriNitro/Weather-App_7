@@ -3,11 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/menuFragment">
+    app:startDestination="@id/searchCityFragment">
 
     <fragment
         android:id="@+id/menuFragment"
         android:name="com.example.weather_app_7.presentation.ui.menu.MenuFragment"
         android:label="fragment_menu"
         tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/searchCityFragment"
+        android:name="com.example.weather_app_7.presentation.ui.menu.search.SearchCityFragment"
+        android:label="fragment_search_city"
+        tools:layout="@layout/fragment_search_city" />
 </navigation>

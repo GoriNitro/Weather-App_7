@@ -1,11 +1,10 @@
 [versions]
 agp = "8.3.2"
-blurview = "version-2.0.3"
 coil = "2.5.0"
 converterGson = "2.9.0"
 gson = "2.10.1"
 kotlin = "1.9.0"
-coreKtx = "1.13.0"
+coreKtx = "1.13.1"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
@@ -14,12 +13,11 @@ lifecycleExtensions = "2.2.0"
 lifecycleRuntimeKtx = "2.7.0"
 lifecycleViewmodelKtx = "2.7.0"
 loggingInterceptor = "4.12.0"
-material = "1.11.0"
+material = "1.12.0"
 activity = "1.9.0"
 constraintlayout = "2.1.4"
 navigationFragmentKtx = "2.7.7"
 retrofit = "2.9.0"
-weatherview = "3.6.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }

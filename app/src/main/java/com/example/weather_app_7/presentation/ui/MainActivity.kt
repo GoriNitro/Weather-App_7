@@ -15,11 +15,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(binding.root)
+        navigate()
     }
     private fun navigate() {
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
-        navController.navigate(R.id.menuFragment)
+        navController.navigate(R.id.searchCityFragment)
     }
 }

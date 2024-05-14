@@ -5,17 +5,20 @@ plugins {
     id("kotlin-kapt")
 }
 
+
 android {
     namespace = "com.example.weather_app_7"
     compileSdk = 34
 
     defaultConfig {
+        buildConfigField ("String", "WEATHER_API_KEY", "\"70cb552311d5f973e4ce1f6a3426d9ba\"")
+        buildConfigField ("String", "WEATHER_BASE_URL", "\"https://api.openweathermap.org\"")
+
         applicationId = "com.example.weather_app_7"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -70,9 +73,9 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
 
-    //Coil
-    implementation(libs.coil)
 
-    //Gson
+
+    //other
+    implementation(libs.coil)
     implementation(libs.gson)
 }
